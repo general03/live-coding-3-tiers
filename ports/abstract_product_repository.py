@@ -1,15 +1,14 @@
-import sqlite3
 from abc import ABC, abstractmethod
 
 from domains.product import Product
 
 
-DATABASE = "ecommerce.db"
-conn = sqlite3.connect(DATABASE)
-cursor = conn.cursor()
-
-
 class AbstractProductRepository(ABC):
+    def __init__(self, db):
+        super().__init__()
+        self.db = db
+        self.cursor = db.cursor()
+
     @abstractmethod
     def get_by_id(self, id: int) -> Product | None:
         pass
