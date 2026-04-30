@@ -7,6 +7,7 @@ You can found several live talking about :
 - Repository pattern on [YouTube channel](https://www.youtube.com/live/YsZqbC8dRC4) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/fda9e79cfb8137586ce83887ff7927135431dc2b)
 - Service pattern on [YouTube channel](https://www.youtube.com/live/GGYWhoxGCo8) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/1f3edf00add17717468be3a4bc578dd3c647ffe7)
 - FastAPI lifespan on [YouTube channel](https://www.youtube.com/live/jeBF7llkPjI) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/8d7b9bed46c536a37163a7f14d6a9287bf51066d)
+- FastAPI error handler exception on [YouTube channel](https://www.youtube.com/live/QTl5Mbt2zP0) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/4b0437914c841321519f51ebe818ddfe4e780ec8)
 
 The initial ugly `main.py` was moved on `main_legacy.py`
 

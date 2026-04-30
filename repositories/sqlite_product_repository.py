@@ -1,6 +1,6 @@
 import sqlite3
+from exception import AccessDataError
 from ports.abstract_product_repository import AbstractProductRepository
-from fastapi import HTTPException
 from domains.product import Product
 
 
@@ -14,4 +14,4 @@ class SqliteProductRepository(AbstractProductRepository):
             return None
         except sqlite3.Error as e:
             self.db.rollback()
-            raise HTTPException(status_code=500, detail=str(e))  # Not do this
+            raise AccessDataError("Access error SQLite") from e
