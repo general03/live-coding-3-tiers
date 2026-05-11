@@ -8,6 +8,7 @@ You can found several live talking about :
 - Service pattern on [YouTube channel](https://www.youtube.com/live/GGYWhoxGCo8) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/1f3edf00add17717468be3a4bc578dd3c647ffe7)
 - FastAPI lifespan on [YouTube channel](https://www.youtube.com/live/jeBF7llkPjI) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/8d7b9bed46c536a37163a7f14d6a9287bf51066d)
 - FastAPI error handler exception on [YouTube channel](https://www.youtube.com/live/QTl5Mbt2zP0) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/4b0437914c841321519f51ebe818ddfe4e780ec8)
+- FastAPI `Depends()` on [YouTube channel](https://www.youtube.com/live/R7dXzSJXnjo) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/4bac2adfde1ab5603f296994c7faba60d5dd8283)
 
 The initial ugly `main.py` was moved on `main_legacy.py`
 
