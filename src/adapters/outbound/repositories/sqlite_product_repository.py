@@ -1,7 +1,8 @@
 import sqlite3
-from exception import AccessDataError
-from ports.abstract_product_repository import AbstractProductRepository
-from domains.product import Product
+
+from src.domains.exceptions import AccessDataError
+from src.domains.product import Product
+from src.ports.abstract_product_repository import AbstractProductRepository
 
 
 class SqliteProductRepository(AbstractProductRepository):

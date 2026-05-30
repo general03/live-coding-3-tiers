@@ -1,5 +1,4 @@
-class NotFoundProduct(Exception):
-    pass
+from src.domains.exceptions import NotFoundProduct
 
 
 class ProductService:
