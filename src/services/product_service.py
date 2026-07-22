@@ -1,5 +1,4 @@
-class NotFoundProduct(Exception):
-    pass
+from src.domains.exceptions import NotFoundProduct
 
 
 class ProductService:
@@ -7,7 +6,6 @@ class ProductService:
         self.repo = repo
 
     def get_by_id(self, id: int) -> int:
-
         product = self.repo.get_by_id(id)
 
         if not product:

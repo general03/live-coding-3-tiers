@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from domains.product import Product
+from src.domains.product import Product
 
 
 class AbstractProductRepository(ABC):
