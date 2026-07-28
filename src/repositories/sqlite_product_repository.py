@@ -8,7 +8,7 @@ from src.repositories.ports.abstract_product_repository import AbstractProductRe
 class SqliteProductRepository(AbstractProductRepository):
     def get_by_id(self, id: int) -> Product | None:
         try:
-            self.cursor.execute("SELECT stock, price FROM products WHERE id = ?", (id,))
+            self.cursor.execute("SELECT name, stock, price FROM products WHERE id = ?", (id,))
             product = self.cursor.fetchone()
             if product:
                 return Product(*product)

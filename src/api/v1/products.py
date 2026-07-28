@@ -1,6 +1,5 @@
 from fastapi import APIRouter, Depends, Request
-from fastapi.responses import JSONResponse
-
+from src.api.v1.responses.product_reponse import ProductResponse
 from src.dependencies import get_product_service
 
 products_router = APIRouter(
@@ -8,8 +7,7 @@ products_router = APIRouter(
 )
 
 
-@products_router.get("/{id}", deprecated=True)
+@products_router.get("/{id}", response_model=ProductResponse)
 async def product_infos(id: int, request: Request):
     stock_product = request.state.product_service.get_by_id(id)
-
-    return JSONResponse(content={"data": {"stock": stock_product}})
+    return stock_product
