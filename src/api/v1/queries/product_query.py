@@ -1,8 +1,6 @@
 from pydantic import BaseModel
 
 
-class ProductResponse(BaseModel):
-    sku: str
+class ProductQuery(BaseModel):
     name: str
-    stock: int
     price: float

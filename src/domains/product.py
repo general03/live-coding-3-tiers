@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Product:
+    sku: str
     name: str
-    stock: int
     price: float
+    stock: int = 0

@@ -11,6 +11,8 @@ You can found several live talking about :
 - FastAPI `Depends()` on [YouTube channel](https://www.youtube.com/live/R7dXzSJXnjo) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/4bac2adfde1ab5603f296994c7faba60d5dd8283)
 - FastAPI architecture on [YouTube channel](https://youtube.com/live/SNCMHs2p6Os) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/e29931863859aa19d09485a190798c07fed7d6ef)
 - FastAPI router on [YouTube channel](https://youtu.be/3QeMUW7-WaM) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/38de837e7b9f123df0fbbbba6b82b3def3349525)
+- FastAPI model response on [YouTube channel](https://youtu.be/Ks2wyD_8Kt8) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/bf3e36432b9a77bc35bc2925c7e6cfd4c4d27d3b)
+- FastAPI input validation on [YouTube channel](https://youtu.be/tFwq_am-FT4) with this [commit](https://github.com/general03/live-coding-3-tiers/commit/80de524cc80155d982a343fe56ce5fdd5cf1ee83)
 
 The initial ugly `main.py` was moved on `main_legacy.py`
 

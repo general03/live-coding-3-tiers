@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3, uuid
 
 def init_db():
     conn = sqlite3.connect('ecommerce.db')
@@ -7,6 +7,7 @@ def init_db():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS products (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            sku TEXT,
             name TEXT UNIQUE,
             stock INTEGER,
             price REAL
@@ -23,13 +24,13 @@ def init_db():
     ''')
     
     products = [
-        ('Clavier Mécanique', 10, 120.0),
-        ('Souris Gamer', 25, 60.0),
-        ('Écran 27 pouces', 5, 350.0)
+        (str(uuid.uuid4()), 'Clavier Mécanique', 10, 120.0),
+        (str(uuid.uuid4()), 'Souris Gamer', 25, 60.0),
+        (str(uuid.uuid4()), 'Écran 27 pouces', 5, 350.0)
     ]
     
     try:
-        cursor.executemany('INSERT INTO products (name, stock, price) VALUES (?, ?, ?)', products)
+        cursor.executemany('INSERT INTO products (sku, name, stock, price) VALUES (?, ?, ?, ?)', products)
         conn.commit()
     except sqlite3.IntegrityError:
         print("Les données existent déjà.")
